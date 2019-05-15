@@ -7,7 +7,7 @@ import DiameterTable from "./components/diameterTable";
 import DiagramArea from "./components/diagramArea";
 import SideBar from "./components/sidebar";
 //import LensPage from "./components/lensPage";
-import DataPage from "./components/newDataPage";
+import CompaniesPage from "./components/companiesPage";
 class App extends Component {
   state = {
     pickedColor: "#FFFFFF",
@@ -67,12 +67,13 @@ class App extends Component {
     switch (id) {
       case 1:
         this.droptds();
-        html = "";
+
         break;
       case 2:
+        this.droptds();
         html = (
           <React.Fragment>
-            <DataPage id={id} />
+            <CompaniesPage />
           </React.Fragment>
         );
         break;
